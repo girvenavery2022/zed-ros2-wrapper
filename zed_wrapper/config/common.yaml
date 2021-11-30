@@ -57,8 +57,8 @@
         pos_tracking:
             pos_tracking_enabled:       true                                # True to enable positional tracking from start
             publish_tf:                 true                                # publish `odom -> base_link` TF
-            publish_map_tf:             true                                # publish `map -> odom` TF
-            base_frame:                 'base_link'                         # use the same name as in the URDF file
+            publish_map_tf:             false                               # publish `map -> odom` TF
+            base_frame:                 'base_footprint'                    # use the same name as in the URDF file
             map_frame:                  'map'
             odometry_frame:             'odom'
             area_memory_db_path:        ''
@@ -86,5 +86,5 @@
             qos_durability:             2                                   # '1': TRANSIENT_LOCAL - '2': VOLATILE
 
         debug:
-            debug_general:              false
-            debug_sensors:              false
+            debug_general:              true
+            debug_sensors:              true

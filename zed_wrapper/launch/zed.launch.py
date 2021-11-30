@@ -27,9 +27,9 @@ def generate_launch_description():
     # Camera name. Can be different from camera model, used to distinguish camera in multi-camera systems
     camera_name = 'zed'
     node_name = 'zed_node'  # Zed Node name
-    publish_urdf = 'true'  # Publish static frames from camera URDF
+    publish_urdf = 'false'  # Publish static frames from camera URDF
     # Robot base frame. Note: overrides the parameter `pos_tracking.base_frame` in `common.yaml`.
-    base_frame = 'base_link'
+    base_frame = 'base_footprint'
     # Position X of the camera with respect to the base frame [m].
     cam_pos_x = '0.0'
     # Position Y of the camera with respect to the base frame [m].
